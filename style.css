@@ -22,7 +22,6 @@ th, td {
   padding: 8px;
   text-align: left;
 }
-
 th {
   background-color: #f2f2f2;
   font-size: 18px;
@@ -164,4 +163,21 @@ footer {
 .social-icons img {
     width: 30px;
     margin: 0 10px;
+}
+.family-video{
+    width:640px;
+    height: 360px;
+}
+.contact-table{
+    overflow: auto;
+}
+.content{
+    overflow: auto;
+}
+@media (max-width: 575.98px) { 
+    .family-video{
+        width:440px;
+        height: 160px;
+    }
+
 }
