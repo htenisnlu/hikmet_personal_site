@@ -1,89 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <title>Me, Myself and Hikmet</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Me, Myself and Hikmet</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="profile-pic">
-	</div>
-        <h1>Me, Myself and Hikmet</h1>
-    </header>
+  <header>
+    <div class="header-container">
+      <div class="profile-pic">
+        <img src="images/avatar.jpg" alt="Avatar of Hikmet">
+      </div>
+      <h1>Me, Myself and Hikmet</h1>
+    </div>
+  </header>
 
-    <nav  class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-	       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-            <div class="collapse navbar-collapse justify-content-center" id="main-navigation">
-    			  <div class="navbar-nav">
-                    <a href="index.html">Home</a>
-                    <a href="family.html">Family</a>
-                    <a href="career.html">Career</a>
-                    <a href="hobbies.html">Hobbies</a>
-            	   <a href="contact.html">Contact</a>
-                </div>
-    		</div>
-	   </div>
-    </nav>
-    <main>
-        <div class="main-content">
-            <img src="images/Family.png" alt="Main Image">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="main-navigation">
+        <div class="navbar-nav">
+          <a href="index.html">Home</a>
+          <a href="family.html">Family</a>
+          <a href="career.html">Career</a>
+          <a href="hobbies.html">Hobbies</a>
+          <a href="contact.html">Contact</a>
         </div>
-        <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-3">
-                <img src="images/me.jpg" style="width:300px" alt="Small Image">
-                <p class="description" data-full="I have a deep love for traveling with my family, creating unforgettable memories together. Here’s a special photo from our recent adventure in Gatlinburg!" data-short="I have a deep love for traveling with my family...">I have a deep love for traveling with my family...</p>
-                <button class="toggle-button">More</button>
-            </div>
-            <div class="col-md-3">
-                <img src="images/akim.JPG" style="width:300px" alt="Small Image">
-                <p class="description" data-full="Again another part of the world, it's Turkey, that's where I was born and raised, I go there every year to see my mom and sister." data-short="Again another part of the world, it's Turkey...">Again another part of the world, it's Turkey...</p>
-                <button class="toggle-button">More</button>
-            </div>
-            <div class="col-md-3">
-                <img src="images/wife.jpg" style="width:300px" alt="Small Image">
-                <p class="description" data-full="Here is my wife and me in Marco Island Florida. The beach and sand are out of this world, so relaxing." data-short="Here is my wife and me in Marco Island Florida...">Here is my wife and me in Marco Island Florida...</p>
-                <button class="toggle-button">More</button>
-            </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Family image wrapped in a container to match card widths -->
+    <section class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-12">
+          <img src="images/Family.png" alt="Family gathering photo" class="img-fluid w-100">
         </div>
+      </div>
     </section>
-    </main>
-    <footer class="bg-body-tertiary text-center text-lg-center bg-dark">
-        <div class="container">
-			<div class="row">
-			    <div class="col">
-                    <div class="social-icons">
-                        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="images/email.png" alt="Email"></a>
-                        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                    </div>
-                </div>
+
+    <section class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/me.jpg" class="card-img-top" alt="Profile picture of Hikmet">
+            <div class="card-body">
+              <p class="card-text description" data-full="I have a deep love for traveling with my family, creating unforgettable memories together. Here’s a special photo from our recent adventure in Gatlinburg!" data-short="I have a deep love for traveling with my family...">
+                I have a deep love for traveling with my family...
+              </p>
+              <button class="toggle-button btn btn-primary">More</button>
             </div>
+          </div>
         </div>
-    </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/akim.JPG" class="card-img-top" alt="Photo of Akim, a memorable moment">
+            <div class="card-body">
+              <p class="card-text description" data-full="Again another part of the world, it's Turkey, that's where I was born and raised, I go there every year to see my mom and sister." data-short="Again another part of the world, it's Turkey...">
+                Again another part of the world, it's Turkey...
+              </p>
+              <button class="toggle-button btn btn-primary">More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="images/wife.jpg" class="card-img-top" alt="Photo of my wife on Marco Island, Florida">
+            <div class="card-body">
+              <p class="card-text description" data-full="Here is my wife and me in Marco Island Florida. The beach and sand are out of this world, so relaxing." data-short="Here is my wife and me in Marco Island Florida...">
+                Here is my wife and me in Marco Island Florida...
+              </p>
+              <button class="toggle-button btn btn-primary">More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="social-icons">
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn icon"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="#"><img src="images/email.png" alt="Email icon"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
     document.querySelectorAll('.toggle-button').forEach(button => {
-        button.addEventListener('click', () => {
-            const p = button.previousElementSibling;
-            const isExpanded = button.textContent === 'Less';
-
-            // Toggle between full and short text
-            p.textContent = isExpanded ? p.dataset.short : p.dataset.full;
-
-            // Update button text
-            button.textContent = isExpanded ? 'More' : 'Less';
-        });
+      button.addEventListener('click', () => {
+        const p = button.previousElementSibling;
+        const isExpanded = button.textContent === 'Less';
+        p.textContent = isExpanded ? p.dataset.short : p.dataset.full;
+        button.textContent = isExpanded ? 'More' : 'Less';
+      });
     });
-</script>
+  </script>
 </body>
 </html>
-

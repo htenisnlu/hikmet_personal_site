@@ -1,200 +1,184 @@
+/* CSS Variables for Color Scheme based on Golden (6:3:1) Rule */
+:root {
+  --dominant-color: #ffffff; /* Background */
+  --secondary-color: #333333; /* Navigation, footer */
+  --accent-color: #f7a046;    /* Key actions, buttons */
+  --text-color: #222222;
+}
+
+/* Global Reset & Robust Typography */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-header {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--dominant-color);
+  margin: 0;
+  padding: 0;
 }
 
-button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: 20px auto;
-  font-family: Arial, sans-serif;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-th {
-  background-color: #f2f2f2;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-td {
-  font-size: 16px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.highlight {
-  color: #ff6600;
-}
-
-.contact_pics {
-  width: 50px;
-  height: 50px;
-}
-.profile-pic {
-    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-    background-image: url('images/avatar.jpg');
-    
-    /* make a square container */
-    width: 100px;
-    height: 100px;
-    margin-right:20px;
-
-    /* fill the container, preserving aspect ratio, and cropping to fit */
-    background-size: cover;
-
-    /* center the image vertically and horizontally */
-    background-position: top center;
-
-    /* round the edges to a circle with border radius 1/2 container size */
-    border-radius: 50%;
-}
-h1 {
-    margin: 0;
-}
-nav {
-    margin: 20px 0;
-}
-nav a {
-    margin: 0 15px;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: lightgray;
-    border-radius: 10px;
-    color: black;
-}
-.content {
-    margin: 30px 0;
-}
-.family-image {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    background-color: lightgray;
-}
-.family-description {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.5;
-}
-.career-image {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    background-color: lightgray;
-}
-.career-description {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.5;
-}
-.main-content img {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    background-color: lightgray;
-    margin-bottom: 20px;
-}
-.grid-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.grid-item {
-    width: 200px;
-    margin: 0 10px;
-    text-align: center;
-}
-.grid-item img {
-    width: 100%;
-    background-color: lightgray;
-}
-.grid-item p {
-    font-size: 14px;
-    margin: 10px 0;
-}
-.hobby-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.hobby {
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-}
-
-.hobby-image {
-    width: 100%;
-    height: auto;
-    background-color: lightgray;
-    border-radius: 10px;
-}
-
-h3 {
-    font-size: 24px;
-    margin-top: 10px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
 }
 
 p {
-    font-size: 16px;
-    margin: 10px 0;
-    line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Header with Avatar and Title */
+header {
+  margin: 20px 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
+/* Navigation */
+nav.navbar {
+  background-color: var(--secondary-color);
+}
+nav.navbar a {
+  color: var(--dominant-color);
+  font-size: 18px;
+  margin: 0 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav.navbar a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+/* Main Content & Containers */
+main {
+  padding: 20px;
+}
+.container {
+  margin-top: 30px;
+}
+
+/* Card Styling (used on gallery sections, etc.) */
+.card {
+  height: 400px;
+  width: 100%;
+  background-color: var(--dominant-color);
+  border: 1px solid #ddd;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+.card-body {
+  overflow: auto;
+}
+.card-text {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.btn-primary:hover {
+  background-color: #e6903f;
+  border-color: #e6903f;
+}
+
+/* Footer */
 footer {
-    margin: 30px 0;
-}
-.social-icons img {
-    width: 30px;
-    margin: 0 10px;
+  padding: 20px 0;
+  background-color: var(--secondary-color);
+  color: var(--dominant-color);
+  text-align: center;
 }
 
-.family-video{
-    width:640px;
-    height: 360px;
+/* Contact Page Specific Styling */
+.contact_pics{
+  width:40px;
 }
-.contact-table{
-    overflow: auto;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
-.content{
-    overflow: auto;
+table, th, td {
+  border: 1px solid #ddd;
 }
-@media (max-width: 575.98px) { 
-    .family-video{
-        width:440px;
-        height: 160px;
-    }
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+.bold {
+  font-weight: 700;
+}
+.italic {
+  font-style: italic;
+}
+.highlight {
+  background-color: var(--accent-color);
+  color: var(--dominant-color);
+}
 
+/* Family Page Specific Styling */
+.family-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Hobbies Page Specific Styling */
+.hobby-section {
+  margin-top: 20px;
+}
+.hobby {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hobby iframe {
+  width: 100%;
+  max-width: 300px;
+  height: 190px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  nav.navbar a {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .header-container {
+    justify-content: center;
+  }
+  .card {
+    height: auto;
+  }
 }
